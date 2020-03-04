@@ -13,15 +13,14 @@ Your educator should have the slides up to help you get familiar with the parts 
 After that, follow along with your educator by opening the browser on your Pi and the Mu editor. Double click the "mu" icon 
 and the "Chromium Web Browser":
 
-![](slides/images/launcher.icons.png | width=100)  
+![](slides/images/launcher.icons.jpg)  
 
 On the slides, you can use the arrow keys to 
 go forward and backward in the slides.  
 
 Set up your desktop to look like this so the editor and browser are side by side:
 
-![](slides/images/side.by.side.png | width=100)  
-
+![](slides/images/side.by.side.jpg)  
 
 ## Lessons
 
