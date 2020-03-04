@@ -68,38 +68,82 @@
 					</p>
 				</section>
 
+<!--				<section >-->
+<!--					<h2>0: Parts & Patience</h2>-->
+<!--					<div style="float:left; width:50%">-->
+<!--						<ul>-->
+<!--							<li>Raspberry Pi <img src="./images/pi4.board.jpeg" class="list-image"/> </li>-->
+<!--							<li>LED <img src="./images/LED2.jpeg" class="list-image"/> </li>-->
+<!--							<li>Button <img src="./images/button.jpeg" class="list-image"/> </li>-->
+<!--							<li>Power Supply <img src="./images/power.supply.jpeg" class="list-image"/> </li>-->
+<!--						</ul>-->
+<!--					</div>-->
+<!--					<div style="float:right; width:50%">-->
+<!--						<ul>-->
+<!--							<li>HDMI Cable <img src="./images/hdmi.cable.jpeg" class="list-image"/> </li>-->
+<!--							<li>Case <img src="./images/laers.cut.case.png" class="list-image"/> </li>-->
+<!--							<li>GPIO Pins <img src="./images/gpio.pins.png" class="list-image"/> </li>-->
+<!--							<li>GPIO leaf <img src="./images/GPIO.leaf.jpeg" class="list-image"/> </li>-->
+<!--							<li>Micro SD Card <img src="./images/micro.sd.card.jpeg" class="list-image"/> </li>-->
+<!--							<li>Monitor, Keyboard & Mouse </li>-->
+<!--						</ul>-->
+<!--					</div>-->
+<!--				</section>-->
+
 				<section >
 					<h2>0: Parts & Patience</h2>
-					<div style="float:left; width:50%">
-						<ul>
-							<li>Raspberry Pi <img src="./images/pi4.board.jpeg" class="list-image"/> </li>
-							<li>LED <img src="./images/LED2.jpeg" class="list-image"/> </li>
-							<li>Button <img src="./images/button.jpeg" class="list-image"/> </li>
-							<li>Power Supply <img src="./images/power.supply.jpeg" class="list-image"/> </li>
-						</ul>
-					</div>
-					<div style="float:right; width:50%">
-						<ul>
-							<li>HDMI Cable <img src="./images/hdmi.cable.jpeg" class="list-image"/> </li>
-							<li>Case <img src="./images/laers.cut.case.png" class="list-image"/> </li>
-							<li>GPIO Pins <img src="./images/gpio.pins.png" class="list-image"/> </li>
-							<li>GPIO leaf <img src="./images/GPIO.leaf.jpeg" class="list-image"/> </li>
-							<li>Micro SD Card <img src="./images/micro.sd.card.jpeg" class="list-image"/> </li>
-							<li>Monitor, Keyboard & Mouse </li>
-						</ul>
-					</div>
+					<table class="parts-table">
+						<tbody>
+							<tr>
+								<td nowrap>Raspberry Pi</td>
+								<td><img src="./images/pi4.board.jpeg" class="list-image"/></td>
+								<td>HDMI Cable</td>
+								<td><img src="./images/hdmi.cable.jpeg" class="list-image"/></td>
+							</tr>
+							<tr>
+								<td>LED</td>
+								<td><img src="./images/LED2.jpeg" class="list-image"/> </td>
+								<td>Case</td>
+								<td><img src="./images/laers.cut.case.png" class="list-image"/></td>
+							</tr>
+							<tr>
+								<td>Button</td>
+								<td><img src="./images/button.jpeg" class="list-image"/></td>
+								<td>Power Supply</td>
+								<td><img src="./images/power.supply.jpeg" class="list-image"/></td>
+							</tr>
+							<tr>
+								<td nowrap>GPIO Pins</td>
+								<td><img src="./images/gpio.pins.png" class="list-image"/></td>
+								<td>HDMI Cable</td>
+								<td><img src="./images/hdmi.cable.jpeg" class="list-image"/></td>
+							</tr>
+							<tr>
+								<td>GPIO leaf</td>
+								<td><img src="./images/GPIO.leaf.jpeg" class="list-image"/></td>
+								<td nowrap>Micro SD Card</td>
+								<td><img src="./images/micro.sd.card.jpeg" class="list-image"/></td>
+							</tr>
+							<tr>
+								<td>Case</td>
+								<td><img src="./images/laers.cut.case.png" class="list-image"/></td>
+								<td colspan="2" >Display, Keyboard & Mouse</td>
+							</tr>
+						</tbody>
+					</table>
+
 				</section>
 
 				<section id="">
 					<h2>0: Set up your Raspberry Pi</h2>
-					<p>Time to plug everything in!</p>
 					<ol>
-						<li>Insert Micro SD Card into underside of Raspbery Pi</li>
-						<li>Plug HDMI cable into the monitor and Raspbery Pi (use left HDMI on Pi)</li>
+						<li>Insert Micro SD Card into bottom of Raspbery Pi</li>
+						<li>Plug HDMI cable into monitor and Raspbery Pi (use left HDMI on Pi)</li>
 						<li>Plug Keyboard and mouse into Raspbery PI</li>
 						<li>Put the GPIO leaf over the GPIO pins</li>
-						<li>Plug the Power supply </li>
+						<li>Plug the Power supply into the powerstrip and finally into the Raspberry Pi</li>
 					</ol>
+					<p>After following the last step, you Pi should boot and you should see it dispay on the monitor</p>
 				</section>
 
 				<section id="lesson1">
@@ -131,7 +175,9 @@
 
 		<style>
 			.reveal section img { border:0; background: inherit; }
-			.list-image{ width: 35%;vertical-align: middle;  image-orientation: from-image; }
+			.reveal section img:hover { width:100%; }
+			.list-image{ width: 45%;vertical-align: middle;  image-orientation: from-image; }
+			.parts-table tr { padding:0; }
 		</style>
 
 		<script>
