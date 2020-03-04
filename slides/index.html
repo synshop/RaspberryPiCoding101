@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Woodbury MS 3D Print Club</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Welcome to<br/>SYN Shop!</h1>
+					<img src="./images/synshop.logo.v4.svg" style="width: 30%;"/>
+					<p>
+						Woodbury MS 3D Print Club - Mar 20th, 2020
+					</p>
+				</section>
+
+				<section>
+					<h1>Goals</h1>
+					<ol>
+						<li>Learn to code Python in 3 hours<br/>or less</li>
+						<li>Inspire you to do more with your<br/>Raspberry Pi after you leave</li>
+						<li>Inspire to hack more in life ;)</li>
+					</ol>
+				</section>
+
+				<section>
+					<h1>Agenda</h1>
+					<ol>
+						<li><a href="#/lesson0">Lesson 0: Parts and Places</a> - Only lecture of the day - let's get to hacking ASAP!</li>
+						<li><a href="#/lesson1">Lesson 1: Hello World</a></li>
+						<li><a href="#/lesson2">Lesson 2: Light</a></li>
+						<li><a href="#/lesson3">Lesson 3: Button</a></li>
+						<li><a href="#/lesson4">Lesson 4: Light Button</a></li>
+						<li><a href="#/lesson4">Lesson 5: Light Button Game</a></li>
+					</ol>
+				</section>
+
+				<section id="lesson0">
+					<h1>Lesson 0: Parts and Places</h1>
+					<ul>
+						<li>Raspberry Pi <img src="images/imageedit_1_6553923797.png" style="width: 100px;vertical-align: middle"/> </li>
+						<li>LED</li>
+						<li>Button</li>
+						<li>Power Supply</li>
+						<li>HDMI Cable</li>
+						<li>Case</li>
+						<li>GPIO Pins</li>
+						<li>GPIO leaf</li>
+					</ul>
+				</section>
+
+				<section id="">
+					<h1>Set up your Raspberry Pi</h1>
+				</section>
+
+				<section id="lesson1">
+					<h1>Lesson 1: Hello World</h1>
+				</section>
+
+				<section id="lesson2">
+					<h1>Lesson 2: Light</h1>
+				</section>
+
+				<section id="lesson3">
+					<h1>Lesson 3: Button</h1>
+				</section>
+
+				<section id="lesson4">
+					<h1>Lesson 4: Light Button</h1>
+				</section>
+
+				<section id="lesson5">
+					<h1>Lesson 5: Light Button Game</h1>
+				</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<style>
+			 .reveal section img { border:0; background: inherit; }
+		</style>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+				controlsTutorial: false,
+
+				transition: 'none', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+</html>
