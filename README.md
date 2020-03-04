@@ -8,7 +8,9 @@ Instructions and presentation for a Raspberry Pi Coding 101 class for Python and
 
 This assumes your educator has prepared your Pi for you and you're getting started with the class.
 
-Follow along with your educator by opening the browser on your Pi and the Mu editor. Double click the "mu" icon 
+Your educator should have the slides up to help you get familiar with the parts and help you assemble your Pi.
+
+After that, follow along with your educator by opening the browser on your Pi and the Mu editor. Double click the "mu" icon 
 and the "Chromium Web Browser":
 
 ![](slides/images/launcher.icons.png | width=100)  
