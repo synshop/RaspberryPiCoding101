@@ -1,18 +1,39 @@
-# Raspberry Pi Coding101
+# Raspberry Pi Coding 101
 
-Instructions and presentation for a Raspberry Pi Coding 101 class for Python
+Instructions and presentation for a Raspberry Pi Coding 101 class for Python and button, LED and more!
 
-## Slides
+## Students
 
-Clone this repo locally and open `./slides/index.html` in a browser
+### Getting Started
+
+This assumes your educator has prepared your Pi for you and you're getting started with the class.
+
+Follow along with your educator by opening the browser on your Pi and the Mu editor. Double click the "mu" icon 
+and the "Chromium Web Browser":
+
+![](slides/images/launcher.icons.png | width=100)  
+
+On the slides, you can use the arrow keys to 
+go forward and backward in the slides.  
+
+Set up your desktop to look like this so the editor and browser are side by side:
+
+![](slides/images/side.by.side.png | width=100)  
+
 
 ## Lessons
 
-TBD
+* 0: Parts and Patience</a> - Only lecture of the day - let's get to hacking ASAP!</li>
+* 1: Hello World
+* 2: Light
+* 3: Button
+* 4: Light Button
+* 5: Light Button Game
 
 ## Educators
 
-This class assumes the educator knows how to program and provision Raspberry Pi's. 
+This class assumes the educator knows how to program and provision Raspberry Pi's.  The class is assumed to be
+3 hours and targets middle schoolers, but likely older elementary and high schoolers would be fine as well. 
 
 ### BOM
 
@@ -26,22 +47,24 @@ for a Pi Zero W with headers.
 * $5 - HDMI cable
 * \>$0 - Keyboard and Mouse (ideally donated or purchased at a used shop for cheap)
 
-For the day of 
-
 We've had great luck purchasing from [Chicago Electronic Distributors](https://chicagodist.com/). As we're a 
 tax exempt non-profit, they didn't charge us tax, gave us educational discounts and generally were a
-joy to work with.  That said, they don't sell the Pi Zero, so the $14 base price above isn't attainable through them. 
+joy to work with.  That said, they don't sell the Pi Zero, so the $14 base price above isn't attainable through them.
+As mentioned above, we used a Pi4. 
 
 ### Prep
 
 1. Order all the equipment
-1. Write [Raspbian with desktop and recommended software](https://www.raspberrypi.org/downloads/raspbian/) to an SD card
+1. Write 
+[Raspbian with desktop and recommended software](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2) 
+to an SD card
 1. Connect to the WiFI you'll use for the class
 1. [Enable VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) (optional)
 1. [Ensure Mu is installed](https://projects.raspberrypi.org/en/projects/getting-started-with-mu)
-1. Git 
-1. Make a desktop link to Mu
-1. Make a desktop link to 
+1. Clone this repo to docs `cd ~/Documents;git clone https://github.com/synshop/RaspberryPiCoding101.git`
+1. Open ``RaspberryPiCoding101/slides/index.html` in the browser. Make this the default start page
+1. [Clone this first SD card onto all the others](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/) 
+so all Pi's are set up identically for the class.
 
 ### Sources
 
@@ -49,8 +72,14 @@ joy to work with.  That said, they don't sell the Pi Zero, so the $14 base price
 * [LED & button](https://github.com/simonmonk/squid)
 * [Getting Started with MU Eidtor](https://projects.raspberrypi.org/en/projects/getting-started-with-mu)
 * [Getting Started with Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started)
+* [Chicago Electronic Distributors](https://chicagodist.com/)
 
+## Wait, why did you do this!?  
+
+With so much great material online, this repository likely is redundant, agreed!  However,
+we wanted to have all our materials in one place where we could refine it over time.  Please
+do use the sources above if you find it easier than this repo. 
 
 ## Contributions
 
-Welcome!
+Pull Requests and Issues are Welcome! 
