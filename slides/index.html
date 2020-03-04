@@ -91,42 +91,42 @@
 <!--				</section>-->
 
 				<section >
-					<h2>0: Parts & Patience</h2>
+					<h2>0: Parts List</h2>
 					<table class="parts-table">
 						<tbody>
 							<tr>
 								<td nowrap>Raspberry Pi</td>
-								<td><img src="./images/pi4.board.jpeg" class="list-image"/></td>
+								<td><img src="./images/pi4.board.jpeg"/></td>
 								<td>HDMI Cable</td>
-								<td><img src="./images/hdmi.cable.jpeg" class="list-image"/></td>
+								<td><img src="./images/hdmi.cable.jpeg"/></td>
 							</tr>
 							<tr>
 								<td>LED</td>
-								<td><img src="./images/LED2.jpeg" class="list-image"/> </td>
+								<td><img src="./images/LED2.jpeg"/> </td>
 								<td>Case</td>
-								<td><img src="./images/laers.cut.case.png" class="list-image"/></td>
+								<td><img src="./images/laers.cut.case.png"/></td>
 							</tr>
 							<tr>
 								<td>Button</td>
-								<td><img src="./images/button.jpeg" class="list-image"/></td>
+								<td><img src="./images/button.jpeg"/></td>
 								<td>Power Supply</td>
-								<td><img src="./images/power.supply.jpeg" class="list-image"/></td>
+								<td><img src="./images/power.supply.jpeg" /></td>
 							</tr>
 							<tr>
 								<td nowrap>GPIO Pins</td>
-								<td><img src="./images/gpio.pins.png" class="list-image"/></td>
+								<td><img src="./images/gpio.pins.png"/></td>
 								<td>HDMI Cable</td>
-								<td><img src="./images/hdmi.cable.jpeg" class="list-image"/></td>
+								<td><img src="./images/hdmi.cable.jpeg"/></td>
 							</tr>
 							<tr>
 								<td>GPIO leaf</td>
-								<td><img src="./images/GPIO.leaf.jpeg" class="list-image"/></td>
+								<td><img src="./images/GPIO.leaf.jpeg"/></td>
 								<td nowrap>Micro SD Card</td>
-								<td><img src="./images/micro.sd.card.jpeg" class="list-image"/></td>
+								<td><img src="./images/micro.sd.card.jpeg"/></td>
 							</tr>
 							<tr>
 								<td>Case</td>
-								<td><img src="./images/laers.cut.case.png" class="list-image"/></td>
+								<td><img src="./images/laers.cut.case.png" /></td>
 								<td colspan="2" >Display, Keyboard & Mouse</td>
 							</tr>
 						</tbody>
@@ -143,11 +143,66 @@
 						<li>Put the GPIO leaf over the GPIO pins</li>
 						<li>Plug the Power supply into the powerstrip and finally into the Raspberry Pi</li>
 					</ol>
-					<p>After following the last step, you Pi should boot and you should see it dispay on the monitor</p>
+					<p>Your Pi should now boot up and display on the monitor</p>
+				</section>
+
+				<section id="">
+					<h2>0: Get ready to start coding</h2>
+					<p>Double click the "Mu" and "Chromium Web Browser" icons. Arrange the windows so
+						they're side by side like this:</p>
+					<img src="./images/side.by.side.jpg" />
 				</section>
 
 				<section id="lesson1">
-					<h1>Lesson 1: Hello World</h1>
+					<h2>1: Hello World</h2>
+					In your Mu window enter this code:
+					<pre><code class="hljs" data-trim >
+						print("Hello World")
+					</code></pre>
+					And click the  <img src="./images/run.button.png" /> button. When prompted to save, find the
+					<code class="inline-code">Documents</code> folder and call this <code class="inline-code">Lesson1.py</code>.
+					<p>
+						Below you should see the Python terminal open and print your text.
+						Congrats, you are now a coder! 🎉
+					</p>
+				</section>
+
+				<section id="">
+					<h2>1: Hello World++</h2>
+					Let's add the concept of a <code class="inline-code">while</code> loop and a few variables.  Edit your code to look like this. Where
+					it says <code class="inline-code">YOUR_NAME</code> put your name instead.
+					<pre><code class="hljs" data-trim >
+import datetime
+name = "YOUR_NAME"
+count = 1
+while count < 11:
+	time = datetime.datetime.now().strftime("%H:%M:%S.%f")
+	print_me = str(count) + ": Hello " + name + " it's " + time
+	print(print_me)
+	count += 1
+print("Bye!")
+					</code></pre>
+					<p>Click the <img src="./images/stop.button.png" /> button and then the <img src="./images/run.button.png" /> button.
+						10 lines should show like: <code class="inline-code">10: Hello Bob it's 03:48:57.179370</code>.
+					</p>
+				</section>
+
+				<section id="">
+					<h2>1: Hello World wrap up</h2>
+					<p>
+						Nice work!  </p>
+					<p>Hopefully you understand how to assign variables like
+						we did with <code class="inline-code">name</code>, <code class="inline-code">time</code>
+						and <code class="inline-code">print_me</code>.  As well, we made a
+						<code class="inline-code">while</code> loop run for 10 times using the
+						<code class="inline-code">count</code> variable.  Finally, you have to start
+						and stop the code when you make changes want to try the code again.
+					</p>
+					<p>Feel free to go
+						back and change this code to do different things.  Run 100 times? Print emoji?
+						What if you do <code class="inline-code">count += 3</code>?
+						Have fun with it!
+					</p>
 				</section>
 
 				<section id="lesson2">
@@ -174,10 +229,12 @@
 		<script src="js/reveal.js"></script>
 
 		<style>
+			img { vertical-align: middle;  }
 			.reveal section img { border:0; background: inherit; }
-			.reveal section img:hover { width:100%; }
-			.list-image{ width: 45%;vertical-align: middle;  image-orientation: from-image; }
+			.parts-table img { width: 45%;}
+			.parts-table img:hover { width:100%; }
 			.parts-table tr { padding:0; }
+			.inline-code {background: #272822; color: #a6e22e;font-family: monospace;padding: 5px; font-size: .65em;}
 		</style>
 
 		<script>

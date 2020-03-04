@@ -63,7 +63,9 @@ to an SD card
 1. [Enable VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) (optional)
 1. [Ensure Mu is installed](https://projects.raspberrypi.org/en/projects/getting-started-with-mu)
 1. Clone this repo to docs `cd ~/Documents;git clone https://github.com/synshop/RaspberryPiCoding101.git`
-1. Open ``RaspberryPiCoding101/slides/index.html` in the browser. Make this the default start page
+1. Open `RaspberryPiCoding101/slides/index.html` in the browser. Make this the default start page.
+1. Create two icons on the desktop as shown in the "Getting started" section above. You can 
+just drag the icons you need from the Pi application menu in the upper left
 1. [Clone this first SD card onto all the others](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/) 
 so all Pi's are set up identically for the class.
 
