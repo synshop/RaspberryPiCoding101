@@ -125,9 +125,7 @@
 								<td><img src="./images/micro.sd.card.jpeg"/></td>
 							</tr>
 							<tr>
-								<td>Case</td>
-								<td><img src="./images/laers.cut.case.png" /></td>
-								<td colspan="2" >Display, Keyboard & Mouse</td>
+								<td colspan="4" >Display, Keyboard & Mouse</td>
 							</tr>
 						</tbody>
 					</table>
@@ -169,20 +167,19 @@
 
 				<section id="">
 					<h2>1: Hello World++</h2>
-					Let's add the concept of a <code class="inline-code">while</code> loop and a few variables.  Edit your code to look like this. Where
-					it says <code class="inline-code">YOUR_NAME</code> put your name instead.
+					Let's add the concept of a <code class="inline-code">while</code> loop and a few variables.
+					Edit your code to look like it does below and where
+					it says <code class="inline-code">YOUR_NAME</code> put your name instead:
 					<pre><code class="hljs" data-trim >
-import datetime
 name = "YOUR_NAME"
 count = 1
-while count < 11:
-	time = datetime.datetime.now().strftime("%H:%M:%S.%f")
-	print(str(count) + " Hi " + name + " it's " + time)
+while count < 6:
+	print(" Hi " + name + " count is " + str(count))
 	count += 1
 print("Bye!")
 					</code></pre>
 					<p>Click the <img src="./images/stop.button.png" /> button and then the <img src="./images/run.button.png" /> button.
-						10 lines should show like: <code class="inline-code">10: Hello Bob it's 03:48:57.179370</code>.
+						5 lines should show like: <code class="inline-code">Hello Bob count is 4</code>.
 					</p>
 				</section>
 
@@ -193,31 +190,44 @@ print("Bye!")
 					<p>Hopefully you understand how to assign variables like
 						we did with <code class="inline-code">name</code>
 						and <code class="inline-code">time</code>.  As well, we made a
-						<code class="inline-code">while</code> loop run for 10 times using the
+						<code class="inline-code">while</code> loop run for 5 times using the
 						<code class="inline-code">count</code> variable.  Finally, you have to start
 						and stop the code when you make changes want to try the code again.
 					</p>
 					<p>Feel free to go
-						back and change this code to do different things.  Run 100 times? Print emoji?
-						What if you do <code class="inline-code">count += 3</code>?
+						back and change this code to do different things.  Run 100 times? Print emoji 🤷‍♀️?
+						What if you do <code class="inline-code">count += 2</code>?
 						Have fun with it!
 					</p>
 				</section>
 
 				<section id="lesson2">
-					<h1>Lesson 2: Light</h1>
+					<h2>2: Light</h2>
+					<p>
+						Printing text is neat and all, but let's control that LED light you have there!
+					</p>
+					<p>
+						Find the LED and connect it as follows:
+						<img class="left-image" src="./images/GPIO.leaf.jpeg" />
+						<ol>
+							<li>Black to GND</li>
+							<li>Red to GPIO18</li>
+							<li>Green to GPIO23</li>
+							<li>Blue to GPIO24</li>
+						</ol>
+					</p>
 				</section>
 
 				<section id="lesson3">
-					<h1>Lesson 3: Button</h1>
+					<h1>3: Button</h1>
 				</section>
 
 				<section id="lesson4">
-					<h1>Lesson 4: Light Button</h1>
+					<h1>4: Light Button</h1>
 				</section>
 
 				<section id="lesson5">
-					<h1>Lesson 5: Light Button Game</h1>
+					<h1>5: Light Button Game</h1>
 				</section>
 
 
@@ -228,9 +238,19 @@ print("Bye!")
 		<script src="js/reveal.js"></script>
 
 		<style>
+			.left-image {
+				float: right;
+				padding-right: 5%;
+				transform: rotate(270deg);
+				padding-left: 20px;
+				width: 38%;
+				margin-left: 7% !important;
+			}
 			img { vertical-align: middle;  }
 			.reveal section img { border:0; background: inherit; }
-			.parts-table img { width: 45%;}
+			.parts-table img { width: 30%;}
+			.parts-table td { font-size: 22px;}
+			.reveal .parts-table  th, .reveal .parts-table  td { border-bottom: 0; }
 			.parts-table img:hover { width:100%; }
 			.parts-table tr { padding:0; }
 			.inline-code {background: #272822; color: #a6e22e;font-family: monospace;padding: 5px; font-size: .65em;}
