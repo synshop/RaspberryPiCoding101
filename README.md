@@ -13,14 +13,14 @@ Your educator should have the slides up to help you get familiar with the parts 
 After that, follow along with your educator by opening the browser on your Pi and the Mu editor. Double click the "mu" icon 
 and the "Chromium Web Browser":
 
-![](docs/images/launcher.icons.jpg)  
+![](slides/images/launcher.icons.jpg)  
 
 On the slides, you can use the arrow keys to 
 go forward and backward in the slides.  
 
 Set up your desktop to look like this so the editor and browser are side by side:
 
-![](docs/images/side.by.side.jpg)  
+![](slides/images/side.by.side.jpg)  
 
 ## Lessons
 
@@ -63,7 +63,7 @@ to an SD card
 1. [Enable VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) (optional)
 1. [Ensure Mu is installed](https://projects.raspberrypi.org/en/projects/getting-started-with-mu)
 1. Clone this repo to docs `cd ~/Documents;git clone https://github.com/synshop/RaspberryPiCoding101.git`
-1. Open `RaspberryPiCoding101/docs/index.html` in the browser. Make this the default start page.
+1. Open `RaspberryPiCoding101/slides/index.html` in the browser. Make this the default start page.
 1. Create two icons on the desktop as shown in the "Getting started" section above. You can 
 just drag the icons you need from the Pi application menu in the upper left
 1. [Clone this first SD card onto all the others](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/) 
