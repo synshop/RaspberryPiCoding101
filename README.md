@@ -69,6 +69,8 @@ just drag the icons you need from the Pi application menu in the upper left
 1. [Clone this first SD card onto all the others](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/) 
 so all Pi's are set up identically for the class.
 
+todo - add steps to [shrink image](https://github.com/Drewsif/PiShrink)? 
+
 ### Sources
 
 * [reveal.js](https://github.com/hakimel/reveal.js) for slides
