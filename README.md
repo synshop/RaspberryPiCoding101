@@ -2,7 +2,8 @@
 
 Instructions and presentation for a Raspberry Pi Coding 101 class for Python and button, LED and more!
 
-To view the slides for the presentation, see the [Github Pages site](https://synshop.ch4lox.com/RaspberryPiCoding101/).
+To view the slides for the presentation, see the [Github Pages site](https://synshop.ch4lox.com/RaspberryPiCoding101/)
+or clone this repo and open `index.html` in a browser. 
 
 ## Students
 
