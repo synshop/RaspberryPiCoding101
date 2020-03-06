@@ -2,7 +2,7 @@
 
 Instructions and presentation for a Raspberry Pi Coding 101 class for Python and button, LED and more!
 
-To view the slides for the presentation, see the [Github Pages site](https://synshop.ch4lox.com/RaspberryPiCoding101/slides/).
+To view the slides for the presentation, see the [Github Pages site](https://synshop.ch4lox.com/RaspberryPiCoding101/).
 
 ## Students
 
@@ -15,14 +15,14 @@ Your educator should have the slides up to help you get familiar with the parts 
 After that, follow along with your educator by opening the browser on your Pi and the Mu editor. Double click the "mu" icon 
 and the "Chromium Web Browser":
 
-![](slides/images/launcher.icons.jpg)  
+![](images/launcher.icons.jpg)  
 
 On the slides, you can use the arrow keys to 
 go forward and backward in the slides.  
 
 Set up your desktop to look like this so the editor and browser are side by side:
 
-![](slides/images/side.by.side.jpg)  
+![](images/side.by.side.jpg)  
 
 ## Lessons
 
@@ -66,7 +66,7 @@ to an SD card
 1. [Ensure Mu is installed](https://projects.raspberrypi.org/en/projects/getting-started-with-mu)
 1. Clone the `squid` repo and run setup: `git clone https://github.com/simonmonk/squid.git;cd squid;sudo python3 setup.py install`
 1. Clone this repo to docs `cd ~/Documents;git clone https://github.com/synshop/RaspberryPiCoding101.git`
-1. Open `RaspberryPiCoding101/slides/index.html` in the browser. Make this the default start page.
+1. Open `RaspberryPiCoding101/index.html` in the browser. Make this the default start page.
 1. Create two icons on the desktop as shown in the "Getting started" section above. You can 
 just drag the icons you need from the Pi application menu in the upper left
 1. [Clone this first SD card onto all the others](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/) 
@@ -77,7 +77,7 @@ todo - add steps to [shrink image](https://github.com/Drewsif/PiShrink)?
 ### Sources
 
 * [reveal.js](https://github.com/hakimel/reveal.js) for slides
-* [LED & button](https://github.com/simonmonk/squid)
+* [LED & button contols via gpiozero](https://gpiozero.readthedocs.io/en/stable/api_output.html)
 * [Getting Started with MU Eidtor](https://projects.raspberrypi.org/en/projects/getting-started-with-mu)
 * [Getting Started with Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started)
 * [Chicago Electronic Distributors](https://chicagodist.com/)

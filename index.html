@@ -27,7 +27,7 @@
 			<div class="slides">
 				<section>
 					<h2>Raspbery Pi<br/>Python Coding 101</h2>
-					<img src="./images/synshop.logo.v4.svg" style="width: 25%;"/>
+					<img src="images/synshop.logo.v4.svg" style="width: 25%;"/>
 					<p>
 						SYN Shop, Henderson, NV<br/>
 						Woodbury MS 3D Print Club - Mar 20th, 2020
@@ -75,33 +75,33 @@
 						<tbody>
 							<tr>
 								<td nowrap>Raspberry Pi</td>
-								<td><img src="./images/pi4.board.jpeg"/></td>
+								<td><img src="images/pi4.board.jpeg"/></td>
 								<td>HDMI Cable</td>
-								<td><img src="./images/hdmi.cable.jpeg"/></td>
+								<td><img src="images/hdmi.cable.jpeg"/></td>
 							</tr>
 							<tr>
 								<td>LED</td>
-								<td><img src="./images/LED2.jpeg"/> </td>
+								<td><img src="images/LED2.jpeg"/> </td>
 								<td>Case</td>
-								<td><img src="./images/laers.cut.case.png"/></td>
+								<td><img src="images/laers.cut.case.png"/></td>
 							</tr>
 							<tr>
 								<td>Button</td>
-								<td><img src="./images/button.jpeg"/></td>
+								<td><img src="images/button.jpeg"/></td>
 								<td>Power Supply</td>
-								<td><img src="./images/power.supply.jpeg" /></td>
+								<td><img src="images/power.supply.jpeg" /></td>
 							</tr>
 							<tr>
 								<td nowrap>GPIO Pins</td>
-								<td><img src="./images/gpio.pins.png"/></td>
+								<td><img src="images/gpio.pins.png"/></td>
 								<td>HDMI Cable</td>
-								<td><img src="./images/hdmi.cable.jpeg"/></td>
+								<td><img src="images/hdmi.cable.jpeg"/></td>
 							</tr>
 							<tr>
 								<td>GPIO leaf</td>
-								<td><img src="./images/GPIO.leaf.jpeg"/></td>
+								<td><img src="images/GPIO.leaf.jpeg"/></td>
 								<td nowrap>Micro SD Card</td>
-								<td><img src="./images/micro.sd.card.jpeg"/></td>
+								<td><img src="images/micro.sd.card.jpeg"/></td>
 							</tr>
 							<tr>
 								<td colspan="4" >Display, Keyboard & Mouse</td>
@@ -127,22 +127,22 @@
 				<section id=""   class="reduced_images">
 					<h2>0: Get ready to start coding</h2>
 					<p>
-						Open "Mu" and "Chromium Web Browser": <img src="./images/launcher.icons.png" style="width: 10%; ">
+						Open "Mu" and "Chromium Web Browser": <img src="images/launcher.icons.png" style="width: 10%; ">
 					</p>
 					<p>
 						Arrange the windows like this:<br/>
-					<img src="./images/side.by.side.png" />
+					<img src="images/side.by.side.png" />
 					</p>
 				</section>
 
 				<section id="lesson1">
 					<h2>1: Hello World</h2>
-					In Mu  enter this code and click the  <img src="./images/run.button.png" /> button.
+					In Mu  enter this code and click the  <img src="images/run.button.png" /> button.
 					<pre><code class="hljs" data-trim >
 						print("Hello World")
 					</code></pre>
-					 When prompted to save, find the
-					<code>Documents</code> folder and name the file <code>Lesson1.py</code>.
+					<p> When prompted to save, find the
+					<code>Documents</code> folder and name the file <code>Lesson1.py</code>.</p>
 					<p>If "Hello World" shows up, congrats you're now a coder! 🎉🙌🏽</p>
 					<p>If "Hello World" doesn't show up, congrats, you're a coder too, but now can debug like a coder 🤪</p>
 
@@ -151,9 +151,9 @@
 
 				<section id="">
 					<h2>1: Hello World++</h2>
-					Let's add the concept of a <code>while</code> loop and a few variables.
+					<p>Let's add the concept of a <code>while</code> loop and a few variables.
 					Edit your code to look like it does below and where
-					it says <code>YOUR_NAME</code> put your name instead:
+					it says <code>YOUR_NAME</code> put your name instead:</p>
 					<pre><code class="hljs" data-trim >
 						name = "YOUR_NAME"
 						count = 1
@@ -162,7 +162,7 @@
 							count += 1
 						print("Bye!")
 					</code></pre>
-					<p>Click the <img src="./images/stop.button.png" /> button and then the <img src="./images/run.button.png" /> button.
+					<p>Click the <img src="images/stop.button.png" /> button and then the <img src="images/run.button.png" /> button.
 						5 lines should show like: <code>Hi Bob count is 4</code>.
 					</p>
 				</section>
@@ -194,20 +194,23 @@
 						Black -> GND &nbsp; Red -> GPIO18<br/>Green -> GPIO23 &nbsp; Blue -> GPIO24
 					</p>
 
-					<img src="./images/GPIO.leaf.LED.png" />
+					<img src="images/GPIO.leaf.LED.png" />
 				</section>
 
 				<section id="">
 					<h2>2: Light Prep</h2>
 					<p>
-						Create a new document by clicking the new <img src="./images/new.button.png"/> button. Click
-						the save <img src="./images/save.button.png" /> button and call it
+						Create a new document by clicking the new <img src="images/new.button.png"/> button. Click
+						the save <img src="images/save.button.png" /> button and call it
 						<code>Lesson2.py</code> (be sure it's next to
 						<code>Lesson1.py</code> in <code>Documents</code>!)
 					</p>
 					<p>
-						To give this script more code powers, we'll import a library called
-						<code>squid</code>  and declare a variable with the GPIOP pins we used above (18, 23 and 24).
+						To give this script more powers, we'll import libraries called
+						<code>gpiozero</code> and <code>time</code>. We'll also declare a variable
+						with the GPIOP pins we used above (18, 23 and 24) with <code>RGBLED(18, 23, 24)</code>.
+						Finally, we'll pause our
+						script for a moment using <code>sleep()</code>.
 						Go to the next slide to see how!
 					</p>
 				</section>
@@ -215,11 +218,13 @@
 				<section>
 					<h2>2: Light Code</h2>
 					<p>
-						Put this into your new document and run it  <img src="./images/run.button.png" />:
+						Put this into your new document and run it  <img src="images/run.button.png" />:
 						<pre><code class="hljs" data-trim >
-							from squid import *
-							led = Squid(18, 23, 24)
-							led.set_color(WHITE)
+from gpiozero import *
+import time
+led = RGBLED(18, 23, 24)
+led.on()
+time.sleep(1)
 						</code></pre>
 					</p>
 					<p>
@@ -233,17 +238,17 @@
 				<section id="">
 					<h2>2: Light Two times</h2>
 					<p>
-						Let's slow this LED's roll with some <code>sleep()</code> between lines.
-						We'll also add some colors. Try this:
+						Let's pump up the jam with some more colors!
+						Try this:
 
 						<pre><code class="hljs" data-trim >
-from squid import *
-led = Squid(18, 23, 24)
-led.set_color(RED)
+from gpiozero import *
+import time
+led = RGBLED(18, 23, 24)
+led.red = 1
 time.sleep(1)
-led.set_color(BLUE)
+led.blue= 1
 time.sleep(1)
-led.set_color(OFF)
 						</code></pre>
 					</p>
 					<p>
@@ -256,9 +261,10 @@ led.set_color(OFF)
 <!--					<h2>2: Light Crazy times</h2>-->
 <!--					<p>-->
 <!--						You should now know how to turn your light on and off.  You also know-->
-<!--						how to wait for one second.  If I tell you that there's more colors like-->
-<!--						<code>GREEN</code>, <code>YELLOW</code> and <code>PURPLE</code>, can you-->
-<!--						use a <code>while</code> loop to make it blink 10 times using 5 different colors?-->
+<!--						how to wait for one second.  If I tell you that there's another-->
+<!--						<code>led.green</code> color, can you-->
+<!--						use a <code>while</code> loop to make it blink 10 times using 4 different colors?-->
+<!--						What about blinking in a forever loop?!-->
 <!--					</p>-->
 <!--				</section>-->
 
@@ -279,7 +285,7 @@ led.set_color(OFF)
 				<section id="">
 					<h2>3: Button Press</h2>
 						<pre><code class="hljs" data-trim >
-from gpiozero import Button
+from gpiozero import *
 button = Button(25)
 
 def turn_on():
@@ -292,7 +298,6 @@ while True:
     button.when_pressed = turn_on
     button.when_released = turn_off
 						</code></pre>
-
 					<p>
 						It'll say "Hi!" when pressed and "Bye!" when released. If not,
 						time to get good at debugging!  Did you know the best coders are the best dubuggers?!
@@ -302,17 +307,166 @@ while True:
 					<h2>3: Button Review</h2>
 					<p>
 						<ol>
-							<li>infinite loops with <code>while True;</code></li>
+							<li>infinite loops with <code>while True;</code> instead of just looping a few times.</li>
 							<li>creating a function with <code>def turn_off():</code> and <code>def turn_on():</code></li>
+							<li>with the new functions we created, we can have them called when pressed <code>button.when_pressed =
+								turn_on</code> and released <code>button.when_released = turn_off</code></li>
 							<li>creating a button object using GPIO pin 25 with <code>button = Button(25)</code></li>
 						</ol>
 					</p>
 				</section>
 
 				<section id="lesson4">
-					<h1>4: Light Button Game</h1>
+					<h2>4: Light Button Game</h2>
 					<p>
-						TBD
+						We're no going to use all the conepts we learned, a two more, to write a game.  This will be fun!
+						First hook up your 2nd button (again, it doesn't matter which is which):
+					</p>
+					<p>
+						One wire -> GND &nbsp; The other wire -> GPI12
+					</p>
+					<p>
+						Create a new file called <code>Lesson4.py</code> next to the other three files.
+					</p>
+				</section>
+
+				<section id="">
+					<h2>4: Imports </h2>
+					<p>
+						Let's import three libraries.  Along with sleeping and talking to our buttons and LED,
+						<code>randrange</code>
+						will allow us to <code>sleep()</code> a random time - perfect for a game!
+					</p>
+					<p>
+						<pre><code class="hljs" data-trim >
+from gpiozero import *
+from random import randrange
+import time
+						</code></pre>
+					</p>
+				</section>
+
+				<section id="">
+					<h2>4: Variables</h2>
+					<p>
+						We're going to create a new variable type called a list.  It's the <code>players</code> list!
+						As well, we'll ensure we have the other variables we used before:
+					</p>
+					<p>
+						<pre><code class="hljs" data-trim >
+players = [0, 0]
+button1 = Button(25)
+button2 = Button(12)
+led = RGBLED(18, 23, 24)
+						</code></pre>
+					</p>
+				</section>
+
+				<section id="">
+					<h2>4: Function lightCheck()</h2>
+					<p>
+						This function checks if the light is on, checks which player pressed the button and gives
+						you a point or takes away a point:
+					</p>
+					<p>
+						<pre><code class="hljs" data-trim >
+def lightCheckPrintScore(player):
+    player = player - 1
+    if led.is_lit:
+        led.off()
+        players[player] += 1
+    else:
+        players[player] -= 1
+
+    print()
+    print("Player 1: " + str(players[0]))
+    print("Player 2: " + str(players[1]))
+						</code></pre>
+					</p>
+				</section>
+
+				<section id="">
+					<h2>4: Function buttonCheck()</h2>
+					<p>
+						This function simply checks if a button was pressed and then calls
+						<code>lightCheckPrintScore()</code> passing it the button that was pressed.
+					</p>
+					<p>
+						<pre><code class="hljs" data-trim >
+def buttonCheck(button_number):
+    if button_number == 1:
+        return lambda: lightCheckPrintScore(button_number)
+    if button_number == 2:
+        return lambda: lightCheckPrintScore(button_number)
+						</code></pre>
+					</p>
+				</section>
+
+				<section id="">
+					<h2>4: Endless Loop</h2>
+					<p>
+						We'll need to endlessly loop and wait a random amount time here:
+					</p>
+					<p>
+						<pre><code class="hljs" data-trim >
+while True:
+    button1.when_pressed = buttonCheck(1)
+    button2.when_pressed = buttonCheck(2)
+
+    led.on()
+    time.sleep(randrange(5))
+						</code></pre>
+					</p>
+				</section>
+
+				<section id="">
+					<h2>4: Light complete code</h2>
+					<p>
+						<pre><code class="hljs" data-trim >
+from gpiozero import *
+from random import randrange
+import time
+
+players = [0, 0]
+button1 = Button(25)
+button2 = Button(12)
+led = RGBLED(18, 23, 24)
+
+
+def lightCheckPrintScore(player):
+    player = player - 1
+    if led.is_lit:
+        led.off()
+        players[player] += 1
+    else:
+        players[player] -= 1
+
+    print()
+    print("Player 1: " + str(players[0]))
+    print("Player 2: " + str(players[1]))
+
+
+def buttonCheck(button_number):
+    if button_number == 1:
+        return lambda: lightCheckPrintScore(button_number)
+    if button_number == 2:
+        return lambda: lightCheckPrintScore(button_number)
+
+
+while True:
+    button1.when_pressed = buttonCheck(1)
+    button2.when_pressed = buttonCheck(2)
+
+    led.on()
+    time.sleep(randrange(5))
+						</code></pre>
+					</p>
+				</section>
+
+				<section id="">
+					<h1>You started coding! You're awesome</h1>
+					<p>
+						Even if you didn't finish all the code, starting is the hardest part ;)
 					</p>
 				</section>
 
