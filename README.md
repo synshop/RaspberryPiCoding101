@@ -64,6 +64,7 @@ to an SD card
 1. Connect to the WiFI you'll use for the class
 1. [Enable VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) (optional)
 1. [Ensure Mu is installed](https://projects.raspberrypi.org/en/projects/getting-started-with-mu)
+1. Clone the `squid` repo and run setup: `git clone https://github.com/simonmonk/squid.git;cd squid;sudo python3 setup.py install`
 1. Clone this repo to docs `cd ~/Documents;git clone https://github.com/synshop/RaspberryPiCoding101.git`
 1. Open `RaspberryPiCoding101/slides/index.html` in the browser. Make this the default start page.
 1. Create two icons on the desktop as shown in the "Getting started" section above. You can 
