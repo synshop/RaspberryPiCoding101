@@ -9,30 +9,29 @@ or clone this repo and open `index.html` in a browser.
 
 ### Getting Started
 
-This assumes your educator has prepared your Pi for you and you're getting started with the class.
+This assumes your educator has prepared your Pi for you and your educator also should have the slides up an central
+screen/projector to help you get familiar with the parts and help you assemble your Pi so you can follow
+these slides yourself.
 
-Your educator should have the slides up to help you get familiar with the parts and help you assemble your Pi.
-
-After that, follow along with your educator by opening the browser on your Pi and the Mu editor. Double click the "mu" icon 
+After you have your Pi assumbled and booted up, follow along with your educator by opening the browser on your 
+Pi and the Mu editor. Double click the "mu" icon 
 and the "Chromium Web Browser":
 
-![](images/launcher.icons.jpg)  
+![](./images/launcher.icons.png)  
 
-On the slides, you can use the arrow keys to 
-go forward and backward in the slides.  
-
-Set up your desktop to look like this so the editor and browser are side by side:
-
-![](images/side.by.side.jpg)  
+On the slides, you can use the arrow keys to go forward and backward in the slides. Be sure to be
+patient while you learn to code. As well, if you get done early, help out other classmates who might need
+a hand!  
 
 ## Lessons
 
-* 0: Parts and Patience</a> - Only lecture of the day - let's get to hacking ASAP!</li>
-* 1: Hello World
-* 2: Light
-* 3: Button
-* 4: Light Button
-* 5: Light Button Game
+* 0: Parts and Patience - Learn how to assemble your hardware and what all the parts are.
+* 1: Hello World - Your first line of code!  "Hello World" is often 
+[the first line of code you write](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) when learning a new language.
+* 2: Light - We'll upgrade from 1 line to 6 lines of code and control a light you'll attach to your Pi.
+* 3: Button - Now we'll go up to 9 lines of code so you can code a button interacting with your Pi.
+* 4: Light Button Game - While almost 30 lines of code, this game will use all the concepts we've learned above to
+write a game.
 
 ## Educators
 
