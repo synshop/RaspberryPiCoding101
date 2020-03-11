@@ -78,6 +78,8 @@ here just once and the clone to the SD cards.
 You will share this password with the students so they know it.
 1. Update all software from the console with `sudo apt update&&sudo apt dist-upgrade`
 1. Connect to the WiFI you'll use for the class - this way the Pi will auto connect during the class and you can finish prep.
+Note - if you connect to other WiFi networks, the password is stored in cleartext in `/etc/wpa_supplicant/wpa_supplicant.conf`, so 
+be aware!
 1. [Enable VNC](https://www.raspberrypi.org/documentation/remote-access/vnc/) (optional - if you do do this and download
 the [RealVNC client](https://www.realvnc.com/en/connect/download/viewer/) you can do the rest of the config remotely 
 and with out the bulky monitor, keyboard and mouse)
@@ -89,9 +91,8 @@ and from the device).
 1. Create two icons on the desktop as shown in the "Getting started" section above. You can 
 just drag the icons you need from the Pi application menu in the upper left
 1. [Clone this first SD card onto all the others](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/) 
-so all Pi's are set up identically for the class.
-
-todo - add steps to [shrink image](https://github.com/Drewsif/PiShrink)? 
+so all Pi's are set up identically for the class. Optionally, you may use  
+[PiShrink](https://github.com/Drewsif/PiShrink) to reduce the .img size and time to write to subsequent SD cards.
 
 ### Sources
 
