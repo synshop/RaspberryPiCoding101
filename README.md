@@ -28,10 +28,16 @@ a hand!
 * 0: Parts and Patience - Learn how to assemble your hardware and what all the parts are.
 * 1: Hello World - Your first line of code!  "Hello World" is often 
 [the first line of code you write](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) when learning a new language.
-* 2: Light - We'll upgrade from 1 line to 6 lines of code and control a light you'll attach to your Pi.
-* 3: Button - Now we'll go up to 9 lines of code so you can code a button interacting with your Pi.
+Concepts covered are the [`print()`](https://docs.python.org/3.5/library/functions.html#print) function. The second version of the app introduces 
+[variables](https://www.tutorialspoint.com/python/python_variable_types.htm) and 
+a [`while:`](https://docs.python.org/3.5/reference/compound_stmts.html#while) loop; 
+* 2: Light - We'll upgrade from 1 line to 6 lines of code and control a light you'll attach to your Pi. Concepts
+covered are [objects](https://www.tutorialspoint.com/python/python_classes_objects.htm) and the concept
+of [importing](https://docs.python.org/3/reference/import.html)
+* 3: Button - Now we'll go up to 9 lines of code so you can code a button interacting with your Pi. Concepts covered
+are [functions](https://www.tutorialspoint.com/python/python_functions.htm)
 * 4: Light Button Game - While almost 30 lines of code, this game will use all the concepts we've learned above to
-write a game.
+write a game. Concepts covered are mixing and matching all the of the above concepts.
 
 ## Educators
 
@@ -72,7 +78,7 @@ follow these steps:
 1. Write 
 [Raspbian with desktop and recommended software](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2) 
 to an SD card. Optionally enable SSH via writing file to disk ([option 3 here](https://www.raspberrypi.org/documentation/remote-access/ssh/))
-1. Assemble a complete kit of on of your Pi setups including keyboard and monitor from the class. We'll prep everything 
+1. Assemble a complete kit of one of your Pi setups including keyboard and monitor from the class. We'll prep everything 
 here just once and the clone to the SD cards.
 1. Go through the first run wizard. Consider changing the `pi` user password to something simple, but not the `raspberry` default. 
 You will share this password with the students so they know it.
