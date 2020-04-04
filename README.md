@@ -98,7 +98,7 @@ and from the device).
 just drag the icons you need from the Pi application menu in the upper left
 1. [Clone this first SD card onto all the others](https://beebom.com/how-clone-raspberry-pi-sd-card-windows-linux-macos/) 
 so all Pi's are set up identically for the class. Optionally, you may use  
-[PiShrink](https://github.com/Drewsif/PiShrink) to reduce the .img size and time to write to subsequent SD cards.
+[PiShrink](https://github.com/Drewsif/PiShrink) to reduce the .img size and time to write to subsequent SD cards. See also [Etcher](https://www.balena.io/etcher/) for a fancy UI way to do this.
 
 ### Sources
 
