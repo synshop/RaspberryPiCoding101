@@ -59,9 +59,8 @@ Bill of Materials for this class is:
 * $0 - Monitor - It's assumed students will use either a monitor they have at home or use their TV so won't need
 one to take home. We used shop monitors or brought in personal ones from shop members to borrow for the day. 
 
-* - While a Pi Zero W with headers ($10 for board + $4 soldered on headers) will work, it might be painfully slow, bordering
-on an unusable UI.  If you 
-can spring for it a 3 or 4 would be better.
+*\*  While a Pi Zero W with headers ($10 for board + $4 soldered on headers) will work, it might be painfully slow, bordering
+on an unusable UI.  If you can spring for it a 3 or 4 would be better.*
 
 We've had great luck purchasing from [Chicago Electronic Distributors](https://chicagodist.com/). As we're a 
 tax exempt non-profit, they didn't charge us tax, gave us educational discounts and generally were a
