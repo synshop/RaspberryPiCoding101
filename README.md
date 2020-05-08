@@ -50,7 +50,7 @@ in this class. Teach away!!
 
 Bill of Materials for this class is:
 
-* \>$14 - Raspberry Pi*
+* $35 - Raspberry Pi 3 or better*
 * $9 - Squid Combo Pack - two buttons and an RGB LED
 * $10 - 16 GB Micro SD card
 * $10 - Pi power supply with cable
