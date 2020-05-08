@@ -27,14 +27,14 @@
 			<div class="slides">
 				<section id="start">
 					<h2>Raspbery Pi<br/>Python Coding 101</h2>
-					<img src="images/synshop.logo.v4.svg" style="width: 25%;"/>
-					<p>
+					<img src="images/synshop.logo.v4.svg" style="width: 25%;"/><br/>
+
 						SYN Shop, Henderson, Nevada, USA<br/>
 						<a href="https://github.com/synshop/RaspberryPiCoding101/">
 							Fork This Project on Github
 							<img src="./images/Ei-sc-github.svg" style="filter: invert(100%); height: 50px" />
 						</a>
-					</p>
+
 				</section>
 
 				<section>
@@ -139,7 +139,7 @@
 
 				<section id="lesson1">
 					<h2>1: Hello World</h2>
-					In Mu  enter this code and click the  <img src="images/run.button.png" /> button.
+					<p>In Mu  enter this code and click the  <img src="images/run.button.png" /> button.</p>
 					<pre><code class="hljs" data-trim >
 						print("Hello World")
 					</code></pre>
@@ -156,7 +156,7 @@
 					<p>Let's add the concept of a <code>while</code> loop and a few variables.
 					Edit your code to look like it does below and where
 					it says <code>YOUR_NAME</code> put your name instead:</p>
-					<pre><code class="hljs" data-trim >
+					<pre><code class="hljs" data-trim data-line-numbers>
 						name = "YOUR_NAME"
 						count = 1
 						while count < 6:
@@ -167,6 +167,8 @@
 					<p>Click the <img src="images/stop.button.png" /> button and then the <img src="images/run.button.png" /> button.
 						5 lines should show like: <code>Hi Bob count is 4</code>.
 					</p>
+					<p>Note - code in this presentation has line numbers (eg 1-6 above). Don't type those in your
+					editor! That's just for the educator to be able to reference the code.</p>
 				</section>
 
 				<section id="">
@@ -193,7 +195,7 @@
 						Now let's control that LED light you have there! Connect the LED wires to the GPIO pins as follows:
 					</p>
 					<p>
-						Black -> GND &nbsp; Red -> GPIO18<br/>Green -> GPIO23 &nbsp; Blue -> GPIO24
+						Black -> GND &nbsp; Red -> #18<br/>Green -> #23 &nbsp; Blue -> #24
 					</p>
 
 					<img src="images/GPIO.leaf.LED.png" />
@@ -221,12 +223,13 @@
 					<h2>2: Light Code</h2>
 					<p>
 						Put this into your new document and run it  <img src="images/run.button.png" />:
-						<pre><code class="hljs" data-trim >
-from gpiozero import *
-import time
-led = RGBLED(18, 23, 24)
-led.on()
-time.sleep(1)
+						<pre><code class="hljs" data-trim data-line-numbers>
+							from gpiozero import *
+							import time
+							led = RGBLED(18, 23, 24)
+							led.on()
+							time.sleep(1)
+							led.off()
 						</code></pre>
 					</p>
 					<p>
@@ -243,14 +246,16 @@ time.sleep(1)
 						Let's pump up the jam with some more colors!
 						Try this:
 
-						<pre><code class="hljs" data-trim >
-from gpiozero import *
-import time
-led = RGBLED(18, 23, 24)
-led.red = 1
-time.sleep(1)
-led.blue= 1
-time.sleep(1)
+						<pre><code class="hljs" data-trim data-line-numbers>
+							from gpiozero import *
+							import time
+							led = RGBLED(18, 23, 24)
+							led.red = 1
+							time.sleep(1)
+							led.off()
+							led.blue= 1
+							time.sleep(1)
+							led.off()
 						</code></pre>
 					</p>
 					<p>
@@ -276,7 +281,7 @@ time.sleep(1)
 						Now we'll listen for a button press. Connect the two wires to the GPIO pins as follows:
 					</p>
 					<p>
-						One wire -> GND &nbsp; The other wire -> GPI25
+						One wire -> GND &nbsp; The other wire -> #25
 					</p>
 					<p>
 						It doesn't matter which wire goes to which pin. Like you did the past lesson,
@@ -286,19 +291,19 @@ time.sleep(1)
 
 				<section id="">
 					<h2>3: Button Press</h2>
-						<pre><code class="hljs" data-trim >
-from gpiozero import *
-button = Button(25)
+						<pre><code class="hljs" data-trim data-line-numbers>
+							from gpiozero import *
+							button = Button(25)
 
-def turn_on():
-    print("Hi!")
+							def turn_on():
+								print("Hi!")
 
-def turn_off():
-    print("Bye!")
+							def turn_off():
+								print("Bye!")
 
-while True:
-    button.when_pressed = turn_on
-    button.when_released = turn_off
+							while True:
+								button.when_pressed = turn_on
+								button.when_released = turn_off
 						</code></pre>
 					<p>
 						It'll say "Hi!" when pressed and "Bye!" when released. If not,
@@ -321,11 +326,11 @@ while True:
 				<section id="lesson4">
 					<h2>4: Light Button Game</h2>
 					<p>
-						We're no going to use all the conepts we learned, a two more, to write a game.  This will be fun!
+						We're now going to use all the concepts we learned, and two more, to write a game.  This will be fun!
 						First hook up your 2nd button (again, it doesn't matter which is which):
 					</p>
 					<p>
-						One wire -> GND &nbsp; The other wire -> GPI12
+						One wire -> GND &nbsp; The other wire -> #12
 					</p>
 					<p>
 						Create a new file called <code>Lesson4.py</code> next to the other three files. Over the
@@ -342,10 +347,10 @@ while True:
 						will allow us to <code>sleep()</code> a random time - perfect for a game!
 					</p>
 					<p>
-						<pre><code class="hljs" data-trim >
-from gpiozero import *
-from random import randrange
-import time
+						<pre><code class="hljs" data-trim data-line-numbers>
+							from gpiozero import *
+							from random import randrange
+							import time
 						</code></pre>
 					</p>
 				</section>
@@ -357,11 +362,11 @@ import time
 						As well, we'll ensure we have the other variables we used before:
 					</p>
 					<p>
-						<pre><code class="hljs" data-trim >
-players = [0, 0]
-button1 = Button(25)
-button2 = Button(12)
-led = RGBLED(18, 23, 24)
+						<pre><code class="hljs" data-trim data-line-numbers>
+							players = [0, 0]
+							button1 = Button(25)
+							button2 = Button(12)
+							led = RGBLED(18, 23, 24)
 						</code></pre>
 					</p>
 				</section>
@@ -373,18 +378,18 @@ led = RGBLED(18, 23, 24)
 						you a point or takes away a point:
 					</p>
 					<p>
-						<pre><code class="hljs" data-trim >
-def lightCheckPrintScore(player):
-    player = player - 1
-    if led.is_lit:
-        led.off()
-        players[player] += 1
-    else:
-        players[player] -= 1
+						<pre><code class="hljs" data-trim data-line-numbers>
+							def lightCheckPrintScore(player):
+								player = player - 1
+								if led.is_lit:
+									led.off()
+									players[player] += 1
+								else:
+									players[player] -= 1
 
-    print()
-    print("Player 1: " + str(players[0]))
-    print("Player 2: " + str(players[1]))
+								print()
+								print("Player 1: " + str(players[0]))
+								print("Player 2: " + str(players[1]))
 						</code></pre>
 					</p>
 				</section>
@@ -396,7 +401,7 @@ def lightCheckPrintScore(player):
 						<code>lightCheckPrintScore()</code> passing it the button that was pressed.
 					</p>
 					<p>
-						<pre><code class="hljs" data-trim >
+						<pre><code class="hljs" data-trim data-line-numbers>
 def buttonCheck(button_number):
     if button_number == 1:
         return lambda: lightCheckPrintScore(button_number)
@@ -412,7 +417,7 @@ def buttonCheck(button_number):
 						We'll need to endlessly loop and wait a random amount time here:
 					</p>
 					<p>
-						<pre><code class="hljs" data-trim >
+						<pre><code class="hljs" data-trim data-line-numbers>
 while True:
     button1.when_pressed = buttonCheck(1)
     button2.when_pressed = buttonCheck(2)
@@ -426,52 +431,50 @@ while True:
 				<section id="">
 					<h2>4: Light complete code</h2>
 					<p>
-						<pre><code class="hljs" data-trim >
-from gpiozero import *
-from random import randrange
-import time
+						<pre><code class="hljs" data-trim data-line-numbers>
+							from gpiozero import *
+							from random import randrange
+							import time
 
-players = [0, 0]
-button1 = Button(25)
-button2 = Button(12)
-led = RGBLED(18, 23, 24)
-
-
-def lightCheckPrintScore(player):
-    player = player - 1
-    if led.is_lit:
-        led.off()
-        players[player] += 1
-    else:
-        players[player] -= 1
-
-    print()
-    print("Player 1: " + str(players[0]))
-    print("Player 2: " + str(players[1]))
+							players = [0, 0]
+							button1 = Button(25)
+							button2 = Button(12)
+							led = RGBLED(18, 23, 24)
 
 
-def buttonCheck(button_number):
-    if button_number == 1:
-        return lambda: lightCheckPrintScore(button_number)
-    if button_number == 2:
-        return lambda: lightCheckPrintScore(button_number)
+							def lightCheckPrintScore(player):
+								player = player - 1
+								if led.is_lit:
+									led.off()
+									players[player] += 1
+								else:
+									players[player] -= 1
+
+								print()
+								print("Player 1: " + str(players[0]))
+								print("Player 2: " + str(players[1]))
 
 
-while True:
-    button1.when_pressed = buttonCheck(1)
-    button2.when_pressed = buttonCheck(2)
+							def buttonCheck(button_number):
+								if button_number == 1:
+									return lambda: lightCheckPrintScore(button_number)
+								if button_number == 2:
+									return lambda: lightCheckPrintScore(button_number)
 
-    led.on()
-    time.sleep(randrange(5))
+
+							while True:
+								button1.when_pressed = buttonCheck(1)
+								button2.when_pressed = buttonCheck(2)
+
+								led.on()
+								time.sleep(randrange(5))
 						</code></pre>
 					</p>
 				</section>
 
 				<section id="">
-					<h1>You started coding! You're awesome!</h1>
-					<p>
-						Starting is the hardest part ;)
-					</p>
+					<h1>You started coding! You’re awesome!</h1>
+					Starting is the hardest part ;)
 				</section>
 
 			</div>
@@ -489,6 +492,7 @@ while True:
 			.parts-table tr { padding:0; }
 			p code {background: #272822; color: #a6e22e;font-family: monospace;padding: 5px; font-size: .65em;}
 			p code, li code {background: #272822; color: #a6e22e;font-family: monospace;padding: 5px; font-size: .65em;}
+			p { text-align: left; }
 		</style>
 
 		<script>
